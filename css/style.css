@@ -33,7 +33,6 @@ body {
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	outline: 1px solid orange;
 }
 .list {
 	list-style: none;
@@ -61,10 +60,14 @@ body {
 	clip-path: inset(50%);
 	margin: -1px;
 }
+.section {
+	padding: 0 94px 0;
+}
 /* Хедер */
 .header {
 	padding-top: 24px;
 	padding-bottom: 25px;
+	border: 1px solid #ececec;
 }
 .header .conteiner {
 	display: flex;
@@ -279,8 +282,10 @@ body {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.button-ui {
+.button-ul {
 	margin-bottom: 34px;
+	display: flex;
+	justify-content: center;
 }
 .button-filter {
 	border: none;
@@ -290,6 +295,8 @@ body {
 	line-height: 1.62;
 	letter-spacing: 0.03em;
 	color: var(--main-txt-color);
+	border-radius: 4px;
+	margin-left: 8px;
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -300,9 +307,15 @@ body {
 	color: var(--white-color);
 	background-color: var(--accent-color);
 }
+.work-list {
+	display: flex;
+	flex-wrap: wrap;
+}
 .work-li {
 	background-color: var(--white-color);
-	border: 1px solid #eeeeee;
+	display: block;
+	width: calc((100% -30px) / 3);
+	margin-bottom: 30px;
 }
 .work-name {
 	font-weight: 700;
@@ -310,7 +323,7 @@ body {
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--main-txt-color);
-	margin-top: 20px;
+	padding-top: 20px;
 	margin-bottom: 4px;
 }
 .work-text {
@@ -318,6 +331,13 @@ body {
 	line-height: 1.87;
 	letter-spacing: 0.03em;
 	color: var(--paragraf-txt-color);
+}
+.work-card {
+	display: block;
+	background: #ffffff;
+	width: 370px;
+	border: 1px solid #eeeeee;
+	border-top: 0;
 }
 
 /* ----------FOOTER-------- */
