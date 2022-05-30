@@ -61,12 +61,10 @@ body {
 	margin: -1px;
 }
 .section {
-	padding: 0 94px 0;
+	padding: 94px 0;
 }
 /* Хедер */
 .header {
-	padding-top: 24px;
-	padding-bottom: 25px;
 	border: 1px solid #ececec;
 }
 .header .conteiner {
@@ -110,6 +108,7 @@ body {
 	color: var(--main-txt-color);
 	font-weight: 500;
 	display: block;
+	padding: 32px 0;
 }
 .current {
 	color: var(--accent-color);
@@ -117,6 +116,8 @@ body {
 .header-mail,
 .header-tel {
 	color: var(--paragraf-txt-color);
+	display: block;
+	padding: 32px 0;
 }
 .header-tel:hover,
 .header-tel:focus,
@@ -174,11 +175,6 @@ body {
 }
 /* ------------------MAIN--BENEFITS------------- */
 
-.benefits {
-	background-color: var(--white-color);
-	padding-top: 109px;
-	padding-bottom: 94px;
-}
 .benefits-list {
 	display: flex;
 }
@@ -202,11 +198,7 @@ body {
 	width: 270px;
 }
 /* ------------------MAIN--ABOUT------------- */
-.about {
-	background-color: var(--white-color);
-	padding-top: 94px;
-	padding-bottom: 179px;
-}
+
 .about-text {
 	font-weight: 700;
 	font-size: 36px;
@@ -226,14 +218,8 @@ body {
 	margin-right: 30px;
 }
 /* ------------------MAIN--ABOUT------------- */
-.team {
-	background-color: #f5f4fa;
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
 .team-li {
 	background-color: var(--white-color);
-	padding-bottom: 30px;
 }
 .team-text {
 	font-weight: 700;
@@ -256,13 +242,16 @@ body {
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
+.team-name {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 .team-user {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
 	letter-spacing: 0.03em;
 	color: var(--main-txt-color);
-	margin-top: 30px;
 	margin-bottom: 10px;
 	display: flex;
 	justify-content: center;
@@ -297,6 +286,7 @@ body {
 	color: var(--main-txt-color);
 	border-radius: 4px;
 	margin-left: 8px;
+	padding: 6px 22px;
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -314,8 +304,12 @@ body {
 .work-li {
 	background-color: var(--white-color);
 	display: block;
-	width: calc((100% -30px) / 3);
+	width: calc((100% / 3) - 30px);
+	margin-right: 30px;
 	margin-bottom: 30px;
+}
+.work-li :not(:nth-child(3)) {
+	margin-right: 0;
 }
 .work-name {
 	font-weight: 700;
@@ -335,11 +329,10 @@ body {
 .work-card {
 	display: block;
 	background: #ffffff;
-	width: 370px;
 	border: 1px solid #eeeeee;
+	width: 370px;
 	border-top: 0;
-	padding-left: 24px;
-	padding-bottom: 20px;
+	padding: 20px 24px;
 }
 
 /* ----------FOOTER-------- */
